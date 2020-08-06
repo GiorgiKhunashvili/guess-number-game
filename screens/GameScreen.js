@@ -8,7 +8,12 @@ const generateRandomBetween = (min, max, exclude) => {
     min = Math.ceil(min);
     max = Math.floor(max);
     const randomNumber = Math.floor(Math.random() * (max - min)) + min;
-    return randomNumber;
+    if (randomNumber === exclude) {
+        return generateRandomBetween(min, max, exclude);
+    } else {
+        return randomNumber;
+    }
+
 };
 
 const GameScreen = (props) => {
