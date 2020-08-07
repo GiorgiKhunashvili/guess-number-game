@@ -5,8 +5,7 @@ import BodyText from '../components/BodyText';
 import TitleText from '../components/TitleText';
 import MainButton from "../components/MainButton";
 
-import { Colors } from 'react-native/Libraries/NewAppScreen';
-
+import Colors from '../constants/colors';
 
 const GameOverScreen = (props) => {
     return (
