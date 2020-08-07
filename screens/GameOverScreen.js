@@ -20,8 +20,7 @@ const GameOverScreen = (props) => {
                 Your phone needed <Text style={styles.highlight}> {props.rounds} </Text> rounds to guess the number
                 <Text style={styles.highlight}> {props.userNumber} </Text></BodyText>
             </View>
-            {/*<Button title="New Game" onPress={props.onPressNewGame}/>*/}
-            <MainButton onPress={() => props.onPressNewGame}>START GAME</MainButton>
+            <MainButton onPress={props.onPressNewGame}>New Game</MainButton>
         </View>
     )
 };
